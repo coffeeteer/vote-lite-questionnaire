@@ -10,8 +10,6 @@
 </head>
 <body>
 <div class="container">
-	
-
 	<form>
 		<h1>Vote Light Questionnaire</h1>
 	  <!-- General Info-->
@@ -127,7 +125,9 @@
 	  <div class="row">
 	  	<div class="col-sm-7">
 	  		<div class="form-group">
-	  			<label for="involvement" class="control-label">Before any other questions, how would you describe your level of political engagement?</label>
+	  			<label for="involvement" class="control-label">
+	  				Before any other questions, how would you describe your level of political engagement?
+	  			</label>
 	  		</div>	
 	  	</div>
 	  	<div class="col-sm-1">
@@ -139,14 +139,13 @@
 	  	</div>	
 	  </div>
 	  
-	  <ol>
 				<div class="row"> <!-- Question 1 -->
 					<div class="col-sm-12">	
-					  <li>
-						  <div class="form-group">
-						  	  <label class="control-label">Please name 3 issues you are concerned with at the national level and when you first became concerned.</label>
-						  </div> 
-					  </li>
+					  <div class="form-group">
+					  	  <label class="control-label">
+					  	  	1. Please name 3 issues you are concerned with at the national level and when you first became concerned.
+					  	  </label>
+					  </div> 
 					  <div class="col-sm-12"> 
 						 <label for="state-concern-1">National Concern #1</label>	
 					  	 <textarea name="concern-1" class="form-control break"></textarea>
@@ -165,29 +164,41 @@
 		  
 			  <div class="row"> <!-- Question 2-->
 			  	<div class="form-group">
-				  	<li>
-				  		<div class="col-sm-12">
-						  	<label>Please name 3 issues you are concerned with at the state level and when you firstbecame concerned (month and year)</label>
-						</div>
-					</li>	
-						<div class="col-sm-2">
-						  	<input type="date" name="state-concern-1" class="break">
-						</div>
-						<div class="col-sm-10">  	
-						  	<textarea class="break form-control" name="state-concern-1"></textarea>
-						</div>
-						<div class="col-sm-2">
-						  	<input type="date" name="state-concern-2">
-						</div>
-						<div class="col-sm-10">  	
-						  	<textarea class="break form-control" name="state-concern-2"></textarea>
-						</div>
-						<div class="col-sm-2">  	
-						  	<input type="date" name="state-concern-3">
-						</div>
-						<div class="col-sm-10">  	
-						  	<textarea class="break form-control" name="state-concern-3"></textarea>
-					  	</div>
+			  		<div class="col-sm-12">
+					  	<label>
+					  		2. Please name 3 issues you are concerned with at the state level and when you firstbecame concerned (month and year).
+					  	</label>
+					</div>
+
+					<div class="col-sm-12"><!-- Part #1-->
+						<label for="state-concern-1">State Concern #1</label>
+					</div>
+					<div class="col-sm-2">
+					  	<input type="date" name="state-concern-1" class="break">
+					</div>
+					<div class="col-sm-10"> 
+					  	<textarea class="break form-control" name="state-concern-1"></textarea>
+					</div> <!-- PArt #1-->
+					
+					<div class="col-sm-12"> <!-- Part #2-->
+						<label for="state-concern-2">State Concern #2</label>
+					</div>
+					<div class="col-sm-2">
+					  	<input type="date" name="state-concern-2">
+					</div>
+					<div class="col-sm-10">
+					  	<textarea class="break form-control" name="state-concern-2"></textarea>
+					</div> <!-- PArt #2-->
+
+					<div class="col-sm-12"> <!-- Part #3 -->
+						<label for="state-concern-3">State Concern #3</label>
+					</div>
+					<div class="col-sm-2">  	
+					  	<input type="date" name="state-concern-3">
+					</div>
+					<div class="col-sm-10">  	
+					  	<textarea class="break form-control" name="state-concern-3"></textarea>
+				  	</div> <!-- Part #3-->
 				</div>
 			  </div>	<!-- Question 2-->
 			  
@@ -196,22 +207,22 @@
 			<div class="row"><!-- Question 3-->
 				<div class="col-sm-12">
 					<div class="form-group">
-						<li>
-					  		<label class="control-label"> Please name 3 issues you are concerned with locally within your district and when you first became concerned.</label>
-					  	</li>
+				  		<label class="control-label">
+				  			3. Please name 3 issues you are concerned with locally within your district and when you first became concerned.
+				  		</label>
 					</div>
-					<div class="col-sm-12">
+					<div class="col-sm-12"><!-- Part #1-->
 						<label for="local-concern-1">Local Concern #1</label>
 						<textarea class="break form-control" name="local-concern-1"></textarea>
-					</div>	
-					<div class="col-sm-12">
+					</div>	<!-- Part #1-->
+					<div class="col-sm-12"> <!-- Part #2-->
 						<label for="local-concern-2">Local Concern #2</label>
 						<textarea class="break form-control" name="local-concern-2"></textarea>
-					</div>
-					<div class="col-sm-12">
+					</div> <!-- Part #2-->
+					<div class="col-sm-12"> <!-- Part #3-->
 						<label for="local-concern-3">Local Concern #3</label>
 						<textarea class="break form-control" name="local-concern-3"></textarea>
-					</div> 
+					</div> <!-- Part #3-->
 			  	</div>
 			</div>  
 
@@ -219,9 +230,9 @@
 			  <div class="form-group">
 
 				  <div class="col-sm-8">
-				  	<li>
-				  		<label for="satisfied-action" class="break control-label">Please tell ways you have taken action regarding concerns 1 through 9?</label> 
-				  	</li>	
+			  		<label for="satisfied-action" class="break control-label">
+			  			4. Please tell ways you have taken action regarding concerns 1 through 9?
+			  		</label> 
 				  </div>
 				  <div class="col-sm-2">		
 				  		<select name="satisfied-action">
@@ -241,9 +252,9 @@
 			</div>
 			<div class="row"> <!-- Question 5 -->
 				<div class="col-sm-8">
-					<li>  		
-			  			<label for="satisfied-response" class="break control-label">How satisfied you were with the satisfied-responseonse you received on a scale of 1 to 5?</label>
-			  		</li>
+		  			<label for="satisfied-response" class="break control-label">
+		  				5. How satisfied you were with the satisfied-responseonse you received on a scale of 1 to 5?
+		  			</label>
 				</div>
 				<div class="col-sm-2">
 					<select name="satisfied-response">
@@ -259,11 +270,9 @@
 			
 			<div class="row">	<!-- Question 6 -->
 				<div class="col-sm-8">
-					<div class="form-group">
-						<li> 
-					  		<label for="vote" class="control-label">Did you vote in the last election?</label>
-					  	</li>
-					</div>  	
+			  		<label for="vote" class="control-label">
+			  			6. Did you vote in the last election?
+			  		</label>
 				</div>
 				<div class="col-sm-2">	
 			  		<select name="vote">
@@ -272,8 +281,11 @@
 			  		</select>
 				</div>
 			</div> <!-- Question 6 -->
-		</ol>  
-	<button type="submit" class="btn btn-default">Submit</button>	
+	<div class="row">
+		<div class="col-sm-5">
+			<button type="submit" class="btn btn-default center">Submit</button>			
+		</div>
+	</div>		
 	</form>
 </div>	
 </body>
