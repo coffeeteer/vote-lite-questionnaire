@@ -217,9 +217,12 @@
 
 			<div class="row"><!-- Question 4-->
 			  <div class="form-group">
-			  <div class="col-sm-10">
-			  		<label for="satisfied-action" class="break control-label">Please tell ways you have taken action regarding concerns 1 through 9?</label> 
-			  </div>
+
+				  <div class="col-sm-8">
+				  	<li>
+				  		<label for="satisfied-action" class="break control-label">Please tell ways you have taken action regarding concerns 1 through 9?</label> 
+				  	</li>	
+				  </div>
 				  <div class="col-sm-2">		
 				  		<select name="satisfied-action">
 				  			<option value="1">1</option>
@@ -233,35 +236,42 @@
 				  			<option value="9">9</option>
 				  		</select>
 				  </div>
-				</div>  
+			  </div>  <!-- Question 4-->
 			
 			</div>
-			<div class="row">
-			<div>
-				
-			</div>  		
-			  	<label for="satisfied-response" class="break control-label">How satisfied you were with the response you received on a scale of 1 to 5?</label>
-			  		<select name="satisfied-response">
+			<div class="row"> <!-- Question 5 -->
+				<div class="col-sm-8">
+					<li>  		
+			  			<label for="satisfied-response" class="break control-label">How satisfied you were with the satisfied-responseonse you received on a scale of 1 to 5?</label>
+			  		</li>
+				</div>
+				<div class="col-sm-2">
+					<select name="satisfied-response">
 			  			<option value="1">1</option>
 			  			<option value="2">2</option>
 			  			<option value="3">3</option>
 			  			<option value="4">4</option>
 			  			<option value="5">5</option>
 			  		</select>
-			  	<!-- (options may include voting, contacting a politician, donating money to a candidate orcause, volunteering for a campaign or cause, participating in a rally, expressingconcerns to friends in person, or expressing concerns via social media) -->
-			  </div>
-			</div>  <!-- Question 4-->
-
+			  	<!-- (options may include voting, contacting a politician, donating money to a candidate orcause, volunteering for a campaign or cause, participating in a rally, expressingconcerns to friends in person, or expressing concerns via social media) -->					
+				</div>
+			</div><!-- Question 5-->
 			
-			<li>
-				 <div class="form-group">
-			  	<label for="vote" class="control-label">Did you vote in the last election?</label>
+			<div class="row">	<!-- Question 6 -->
+				<div class="col-sm-8">
+					<div class="form-group">
+						<li> 
+					  		<label for="vote" class="control-label">Did you vote in the last election?</label>
+					  	</li>
+					</div>  	
+				</div>
+				<div class="col-sm-2">	
 			  		<select name="vote">
 			  			<option value="yes">Yes</option>
 			  			<option value="no">No</option>
 			  		</select>
-			  </div>			
-			</li>
+				</div>
+			</div> <!-- Question 6 -->
 		</ol>  
 	<button type="submit" class="btn btn-default">Submit</button>	
 	</form>
